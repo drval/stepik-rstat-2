@@ -8,7 +8,7 @@ str(df1)
 table(df1$Species)
 
 hist(df1$Sepal.Length)
-
+library(ggplot2)
 ggplot(df1, aes(x =Sepal.Length ))+
   geom_histogram(fill = "white", col = "black", binwidth = 0.4)+
   facet_grid(Species ~ .)
